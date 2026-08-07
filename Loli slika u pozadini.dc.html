@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/classical-ed6f363e-2819-4caf-a9cc-83bfa0210598/styles.css">
+<script src="_ds/classical-ed6f363e-2819-4caf-a9cc-83bfa0210598/_ds_bundle.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap">
+<script src="./image-slot.js"></script>
+<style>
+@font-face{font-family:'The Seasons';src:url('assets/fonts/theseasons-bd.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'The Seasons';src:url('assets/fonts/theseasons-bd.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap}
+:root{
+  --color-bg:#ffffff;
+  --color-surface:#fdeef2;
+  --color-text:#4a343a;
+  --color-accent:#b8546e;
+  --color-divider:color-mix(in srgb,#b8546e 24%,transparent);
+  --loli-green:#c2687f;
+  --loli-green-deep:#b8546e;
+  --loli-pink:#f4afc1;
+  --loli-rose:#b8546e;
+  --loli-rose-deep:#9c3f59;
+  --loli-sage:#67795e;
+  --loli-sage-deep:#4f5f47;
+  --loli-gold:#c2a24a;
+  --loli-gold-deep:#8a6d1f;
+  --shadow-sm:0 1px 2px color-mix(in srgb,#4a343a 12%,transparent);
+  --shadow-md:0 3px 10px color-mix(in srgb,#4a343a 14%,transparent);
+  --shadow-lg:0 12px 32px color-mix(in srgb,#4a343a 16%,transparent);
+  --font-heading:'The Seasons',serif;
+  --font-body:'Poppins',sans-serif;
+  --font-heading-weight:400;
+}
+body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);font-weight:300;font-size:16px;line-height:1.7}
+h1,h2{font-family:var(--font-heading);font-weight:400;font-size:42px;line-height:1.12}
+h3,h4,h5,h6{font-family:var(--font-heading);font-weight:400;font-size:26px;line-height:1.2}
+h1:not([style*="color"]),h2:not([style*="color"]),h3:not([style*="color"]),h4:not([style*="color"]),h5:not([style*="color"]),h6:not([style*="color"]){color:var(--loli-sage)}
+p[style*="italic"]:not([style*="color"]),summary:not([style*="color"]){color:var(--loli-sage)}
+p,li,td,th,a,span,div,button,input,select,textarea,label,summary{font-family:inherit}
+.btn{font-family:var(--font-body);font-weight:300;font-size:16px}
+.input,.field > label{font-family:var(--font-body);font-weight:300}
+strong,b{font-weight:400}
+.card-body,.card-meta,.seg-opt,.tag,.input,select.input,option,textarea.input{font-size:16px}
+.card-kicker,.field > label,figcaption,h6{font-size:10px}
+a{color:var(--color-accent);text-decoration:none}
+a:hover{color:var(--loli-rose-deep)}
+.en{display:none}
+[data-lang="en"] .en{display:inline}
+[data-lang="en"] .sr{display:none}
+[data-gallery="false"] .gallery-block{display:none}
+button[data-t][aria-pressed="true"]{border-color:var(--color-accent);background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-accent)}
+summary::-webkit-details-marker{display:none}
+summary::marker{content:""}
+</style>
+</helmet>
+<div data-lang="{{ lang }}" data-gallery="{{ galleryOn }}" style="width:100%;background:var(--color-bg)">
+
+  <section id="top" style="position:relative;display:flex;align-items:center;justify-content:center;min-height:760px;padding:96px 40px;background-image:linear-gradient(color-mix(in srgb,var(--loli-rose) 74%,transparent),color-mix(in srgb,var(--loli-rose-deep) 78%,transparent)),url('assets/hero-spa.jpg');background-size:cover;background-position:center">
+      <nav style="position:absolute;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 40px">
+        <div style="display:flex;align-items:center;gap:28px;font-family:var(--font-body);font-size:16px;letter-spacing:.02em;white-space:nowrap">
+          <a href="#usluge" style="color:#ffffff" style-hover="color:var(--loli-pink)"><span class="sr">Usluge</span><span class="en">Services</span></a>
+          <a href="Cenovnik.dc.html" style="color:#ffffff" style-hover="color:var(--loli-pink)"><span class="sr">Cenovnik</span><span class="en">Prices</span></a>
+          <a href="#galerija" style="color:#ffffff" style-hover="color:var(--loli-pink)"><span class="sr">Galerija</span><span class="en">Gallery</span></a>
+          <a href="#o-nama" style="color:#ffffff" style-hover="color:var(--loli-pink)"><span class="sr">O nama</span><span class="en">About</span></a>
+          <a href="#kontakt" style="color:#ffffff" style-hover="color:var(--loli-pink)"><span class="sr">Kontakt</span><span class="en">Contact</span></a>
+        </div>
+        <button onClick="{{ toggleLang }}" class="btn" style="font-size:16px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;color:#ffffff;border-color:color-mix(in srgb,#ffffff 55%,transparent)">{{ langLabel }}</button>
+      </nav>
+    <div style="position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;max-width:760px">
+      <img src="assets/mark-pink.png" alt="" style="width:auto;height:76px;margin:0 0 18px">
+      <img src="assets/wordmark-pink.png" alt="Loli spot" style="width:auto;max-width:420px;margin:0 0 12px">
+      <div style="font-family:var(--font-heading);font-size:26px;color:#ffffff;margin:0 0 30px"><span class="sr">Tvoje mesto za brigu o sebi</span><span class="en">Your place to care for yourself</span></div>
+      <p style="font-size:16px;line-height:1.8;color:color-mix(in srgb,#ffffff 92%,transparent);max-width:44ch;margin:0 0 38px"><span class="sr">Bilo da dolaziš na depilaciju, masažu ili tretman lepote, dočekaće te stručnost, prijatna atmosfera i pažnja posvećena svakom detalju.</span><span class="en">Whether you come for waxing, a massage or a beauty treatment, you’ll be met with expertise, a warm room and attention to every detail.</span></p>
+      <a href="#zakazi" class="btn" style="font-size:16px;padding:13px 30px;white-space:nowrap;margin-bottom:46px;color:var(--loli-rose);background:#ffffff;border-color:#ffffff" style-hover="background:color-mix(in srgb,#ffffff 88%,var(--loli-rose))"><span class="sr">Zakaži termin</span><span class="en">Book a visit</span></a>
+      <div style="width:100%;max-width:440px;height:1px;background:color-mix(in srgb,#ffffff 55%,transparent);margin:0 0 20px"></div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:28px;font-size:16px;letter-spacing:.02em;color:color-mix(in srgb,#ffffff 88%,transparent)">
+        <span>Pere Ćetkovića 11c</span>
+        <span><span class="sr">Pon–Sub</span><span class="en">Mon–Sat</span> 09–20h</span>
+        <span style="font-feature-settings:'tnum'">+381 63 411 208</span>
+      </div>
+    </div>
+  </section>
+
+  <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:44px;padding:22px 40px;background:var(--loli-rose);font-family:var(--font-body);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#ffffff">
+    <span><span class="sr">Masaža</span><span class="en">Massage</span></span>
+    <span><span class="sr">Depilacija</span><span class="en">Waxing</span></span>
+    <span><span class="sr">Manikir</span><span class="en">Manicure</span></span>
+    <span><span class="sr">Sprej ten</span><span class="en">Spray tan</span></span>
+    <span><span class="sr">Frizure po pozivu</span><span class="en">Hair by appointment</span></span>
+  </div>
+
+  <section id="usluge" style="padding:96px 40px;max-width:1240px;margin:0 auto">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:44px;flex-wrap:wrap">
+      <div>
+        <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--loli-sage);margin-bottom:14px"><span class="sr">Usluge</span><span class="en">Services</span></div>
+        <h2 style="font-size:42px;font-weight:400;margin:0;max-width:24ch"><span class="sr">Sve što koža traži, na jednom mestu</span><span class="en">Everything your skin asks for, in one place</span></h2>
+      </div>
+      <a href="Cenovnik.dc.html" class="btn btn-ghost" style="font-size:16px;white-space:nowrap"><span class="sr">Ceo cenovnik →</span><span class="en">Full price list →</span></a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:20px">
+      <div class="card" style="grid-column:span 3;padding:32px;background:transparent;border-color:var(--loli-gold)">
+        <div class="card-kicker" style="font-feature-settings:'tnum';letter-spacing:.18em;font-size:10px;text-transform:uppercase;color:var(--loli-gold-deep);margin-bottom:14px">01 · <span class="sr">Najtraženije</span><span class="en">Most booked</span></div>
+        <h3 class="card-title" style="font-size:26px;font-weight:400;margin:0 0 12px"><span class="sr" style="font-family: the seasons">Masaža</span><span class="en">Massage</span></h3>
+        <p class="card-body" style="text-align:justify;hyphens:auto;line-height:1.7;color:color-mix(in srgb,var(--color-text) 76%,transparent)"><span class="sr">Relaks, duboka tkiva, anticelulit i masaža lica. Toplo hladno presovano ulje, tiha soba i tempo koji se prilagođava tebi — ne obrnuto.</span><span class="en">Relaxing, deep tissue, anti-cellulite and facial massage. Warm cold-pressed oil, a quiet room, and a pace that adapts to you.</span></p>
+        <div class="card-meta" style="display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid var(--loli-gold);font-size:10px;font-feature-settings:'tnum';color:color-mix(in srgb,var(--color-text) 62%,transparent)">
+          <span>30 / 60 / 90 min</span><span><span class="sr">od</span><span class="en">from</span> 2.800 RSD</span>
+        </div>
+      </div>
+      <div class="card" style="grid-column:span 3;padding:32px;background:transparent;border-color:var(--loli-gold)">
+        <div class="card-kicker" style="font-feature-settings:'tnum';letter-spacing:.18em;font-size:10px;text-transform:uppercase;color:var(--loli-gold-deep);margin-bottom:14px">02 · <span class="sr">Naša specijalnost</span><span class="en">Our specialty</span></div>
+        <h3 class="card-title" style="font-size:26px;font-weight:400;margin:0 0 12px"><span class="sr">Depilacija voskom</span><span class="en">Waxing</span></h3>
+        <p class="card-body" style="text-align:justify;hyphens:auto;line-height:1.7;color:color-mix(in srgb,var(--color-text) 76%,transparent)">
+          <span class="sr">Topli vosak sa azulenom i film vosak bez trakica, za osetljivu kožu i intimnu zonu. Nega pre i posle je uključena, a tehnika je brza i pažljiva.</span><span class="en">Azulene warm wax and stripless film wax for sensitive skin and intimate areas. Pre- and after-care included.</span></p>
+        <div class="card-meta" style="display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid var(--loli-gold);font-size:10px;font-feature-settings:'tnum';color:color-mix(in srgb,var(--color-text) 62%,transparent)">
+          <span><span class="sr">15–60 min</span><span class="en">15–60 min</span></span><span><span class="sr">od</span><span class="en">from</span> 900 RSD</span>
+        </div>
+      </div>
+      <div class="card" style="grid-column:span 2;padding:28px;background:transparent;border-color:var(--loli-gold)">
+        <div class="card-kicker" style="font-feature-settings:'tnum';letter-spacing:.18em;font-size:10px;text-transform:uppercase;color:var(--loli-gold-deep);margin-bottom:12px">03</div>
+        <h4 style="font-size:26px;font-weight:400;margin:0 0 10px"><span class="sr">Manikir</span><span class="en">Manicure</span></h4>
+        <p style="line-height:1.65;font-size:16px;color:color-mix(in srgb,var(--color-text) 74%,transparent)"><span class="sr">Klasičan i gel manikir, nega zanoktica, diskretne nijanse.</span><span class="en">Classic and gel manicure, cuticle care, discreet shades.</span></p>
+        <div style="padding-top:14px;border-top:1px solid var(--loli-gold);font-size:10px;font-feature-settings:'tnum';color:color-mix(in srgb,var(--color-text) 62%,transparent)"><span class="sr">od</span><span class="en">from</span> 1.500 RSD</div>
+      </div>
+      <div class="card" style="grid-column:span 2;padding:28px;background:transparent;border-color:var(--loli-gold)">
+        <div class="card-kicker" style="font-feature-settings:'tnum';letter-spacing:.18em;font-size:10px;text-transform:uppercase;color:var(--loli-gold-deep);margin-bottom:12px">04</div>
+        <h4 style="font-size:26px;font-weight:400;margin:0 0 10px"><span class="sr">Sprej ten</span><span class="en">Spray tan</span></h4>
+        <p style="line-height:1.65;font-size:16px;color:color-mix(in srgb,var(--color-text) 74%,transparent)"><span class="sr">Ravnomeran topao ton bez sunca. Traje pet do sedam dana.</span><span class="en">An even, warm tone without the sun. Lasts five to seven days.</span></p>
+        <div style="padding-top:14px;border-top:1px solid var(--loli-gold);font-size:10px;font-feature-settings:'tnum';color:color-mix(in srgb,var(--color-text) 62%,transparent)"><span class="sr">od</span><span class="en">from</span> 2.500 RSD</div>
+      </div>
+      <div class="card" style="grid-column:span 2;padding:28px;background:transparent;border-color:var(--loli-gold)">
+        <div class="card-kicker" style="font-feature-settings:'tnum';letter-spacing:.18em;font-size:10px;text-transform:uppercase;color:var(--loli-gold-deep);margin-bottom:12px">05</div>
+        <h4 style="font-size:26px;font-weight:400;margin:0 0 10px"><span class="sr">Frizure po pozivu</span><span class="en">Hair, by appointment</span></h4>
+        <p style="line-height:1.65;font-size:16px;color:color-mix(in srgb,var(--color-text) 74%,transparent)"><span class="sr">Za svadbe, proslave i fotografisanja — dogovaramo se unapred.</span><span class="en">For weddings, parties and shoots — arranged in advance.</span></p>
+        <div style="padding-top:14px;border-top:1px solid var(--loli-gold);font-size:10px;color:color-mix(in srgb,var(--color-text) 62%,transparent)"><span class="sr">na upit</span><span class="en">on request</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--loli-green-deep);padding:92px 40px">
+    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start">
+      <div>
+        <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#ffffff;opacity:.9;margin-bottom:16px"><span class="sr">Ulja i voskovi</span><span class="en">Oils &amp; waxes</span></div>
+        <h2 style="font-size:42px;font-weight:400;color:#ffffff;margin:0 0 20px;max-width:22ch"><span class="sr">Ono što ide na kožu biramo kao za sebe</span><span class="en">What goes on your skin is chosen as if for us</span></h2>
+        <p style="text-align:justify;hyphens:auto;font-size:16px;line-height:1.75;color:color-mix(in srgb,#ffffff 72%,transparent);max-width:44ch"><span class="sr">Ne kupujemo na kilo. Ulja su hladno presovana, voskovi profesionalni i namenjeni osetljivoj koži, a sve što koristimo je bez parabena i mineralnih ulja. Ako imaš alergiju ili osetljivost, reci nam pre termina — imamo alternativu.</span><span class="en">Oils are cold-pressed, waxes are professional and made for sensitive skin, and nothing we use contains parabens or mineral oils. Tell us about allergies before your visit — we have an alternative.</span></p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;justify-content:space-between;gap:24px;padding:16px 0;border-top:1px solid color-mix(in srgb,#ffffff 22%,transparent);color:#ffffff;font-family:var(--font-body);font-size:16px"><span class="sr">Ulje slatkog badema, hladno presovano</span><span class="en">Cold-pressed sweet almond oil</span><span style="color:#ffffff;font-size:10px;font-feature-settings:'tnum';align-self:center">01</span></div>
+        <div style="display:flex;justify-content:space-between;gap:24px;padding:16px 0;border-top:1px solid color-mix(in srgb,#ffffff 22%,transparent);color:#ffffff;font-family:var(--font-body);font-size:16px"><span class="sr">Vosak sa azulenom za osetljivu kožu</span><span class="en">Azulene wax for sensitive skin</span><span style="color:#ffffff;font-size:10px;font-feature-settings:'tnum';align-self:center">02</span></div>
+        <div style="display:flex;justify-content:space-between;gap:24px;padding:16px 0;border-top:1px solid color-mix(in srgb,#ffffff 22%,transparent);color:#ffffff;font-family:var(--font-body);font-size:16px"><span class="sr">Film vosak bez trakica, za intimnu zonu</span><span class="en">Stripless film wax for intimate areas</span><span style="color:#ffffff;font-size:10px;font-feature-settings:'tnum';align-self:center">03</span></div>
+        <div style="display:flex;justify-content:space-between;gap:24px;padding:16px 0;border-top:1px solid color-mix(in srgb,#ffffff 22%,transparent);color:#ffffff;font-family:var(--font-body);font-size:16px"><span class="sr">Ulje avokada i jojobe za suvu kožu</span><span class="en">Avocado and jojoba oil for dry skin</span><span style="color:#ffffff;font-size:10px;font-feature-settings:'tnum';align-self:center">04</span></div>
+        <div style="display:flex;justify-content:space-between;gap:24px;padding:16px 0;border-top:1px solid color-mix(in srgb,#ffffff 22%,transparent);border-bottom:1px solid color-mix(in srgb,#ffffff 22%,transparent);color:#ffffff;font-family:var(--font-body);font-size:16px"><span class="sr">Šećerna pasta za lice i ruke</span><span class="en">Sugar paste for face and arms</span><span style="color:#ffffff;font-size:10px;font-feature-settings:'tnum';align-self:center">05</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerija" class="gallery-block" style="padding:96px 40px;max-width:1240px;margin:0 auto">
+    <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--loli-sage);margin-bottom:14px"><span class="sr">Galerija</span><span class="en">Gallery</span></div>
+    <h2 style="font-size:42px;font-weight:400;margin:0 0 40px;max-width:26ch"><span class="sr">Soba, ruke i rezultati</span><span class="en">The room, the hands, the results</span></h2>
+    <div style="display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);grid-template-rows:230px 230px;gap:20px">
+      <div class="plate" style="grid-row:span 2"><image-slot id="g1" shape="rect" placeholder="Enterijer salona"></image-slot></div>
+      <div class="plate"><image-slot id="g2" shape="rect" placeholder="Detalj: ulja"></image-slot></div>
+      <div class="plate"><image-slot id="g3" shape="rect" placeholder="Manikir"></image-slot></div>
+      <div class="plate" style="grid-column:span 2"><image-slot id="g4" shape="rect" placeholder="Tretman u toku"></image-slot></div>
+    </div>
+  </section>
+
+  <section style="padding:0 40px 96px;max-width:1240px;margin:0 auto">
+    <hr class="hr" style="margin:0 0 40px">
+    <h2 style="font-size:42px;font-weight:400;margin:0 0 40px"><span class="sr">Rekli su o nama</span><span class="en">What they say about us</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0">
+      <div style="padding:0 36px 0 0;border-right:1px solid var(--color-divider)">
+        <p style="font-family:var(--font-heading);font-size:26px;font-style:italic;line-height:1.5;margin:0 0 18px;text-wrap:pretty"><span class="sr" style="font-family: Poppins">„Prvi put mi depilacija nije bila neprijatna. I miris u salonu — htela bih ga kod kuće.”</span><span class="en">“The first time waxing wasn’t unpleasant for me. And that scent — I’d want it at home.”</span></p>
+        <div style="font-size:10px;letter-spacing:.06em;color:color-mix(in srgb,var(--color-text) 60%,transparent)">Jelena M. · <span class="sr">klijentkinja 2 godine</span><span class="en">2 years a client</span></div>
+      </div>
+      <div style="padding:0 36px;border-right:1px solid var(--color-divider)">
+        <p style="font-family:var(--font-heading);font-size:26px;font-style:italic;line-height:1.5;margin:0 0 18px;text-wrap:pretty"><span class="sr" style="font-family: Poppins">„Došla sam zbog bolova u ramenima, ostala zbog toga kako se osećam posle. Niko me ne juri iz sobe.”</span><span class="en">“I came for shoulder pain and stayed for how I feel after. Nobody rushes me out.”</span></p>
+        <div style="font-size:10px;letter-spacing:.06em;color:color-mix(in srgb,var(--color-text) 60%,transparent)">Ana T. · <span class="sr">masaža dubokih tkiva</span><span class="en">deep tissue</span></div>
+      </div>
+      <div style="padding:0 0 0 36px">
+        <p style="font-family:var(--font-heading);font-size:26px;font-style:italic;line-height:1.5;margin:0 0 18px;text-wrap:pretty"><span class="sr" style="font-family: Poppins">„Sprej ten za svadbu sestre — bez fleka, bez narandžastog. Frizuru mi je uradila isto tu.”</span><span class="en">“Spray tan for my sister’s wedding — no streaks, no orange. She did my hair too.”</span></p>
+        <div style="font-size:10px;letter-spacing:.06em;color:color-mix(in srgb,var(--color-text) 60%,transparent)">Milica S. · <span class="sr">sprej ten i frizura</span><span class="en">spray tan &amp; hair</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="o-nama" style="background:var(--color-surface);padding:92px 40px;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">
+    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1fr);gap:64px;align-items:center">
+      <div class="plate" style="height:520px;border-color:var(--color-bg)"><image-slot id="about" shape="rect" placeholder="Portret — Lola u salonu"></image-slot></div>
+      <div>
+        <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--loli-sage);margin-bottom:16px"><span class="sr">O nama</span><span class="en">About</span></div>
+        <h2 style="font-size:42px;font-weight:400;margin:0 0 22px;max-width:22ch"><span class="sr">Ja sam Lola. Salon je moj, kao i svaki termin u njemu.</span><span class="en">I’m Lola. The salon is mine — and so is every appointment in it.</span></h2>
+        <p style="text-align:justify;hyphens:auto;font-size:16px;line-height:1.75;color:color-mix(in srgb,var(--color-text) 78%,transparent);max-width:48ch"><span class="sr">Dvanaest godina radim sa telom i kožom — prvo u velikim salonima, poslednjih pet godina sama, ovde u Pere Ćetkovića. Naučila sam da je najvažnije ono što se ne vidi na ceniku: da imaš vremena, da te niko ne gleda i da izađeš bez ijedne neprijatne uspomene.</span><span class="en">Twelve years working with bodies and skin — first in large salons, the last five on my own here on Pere Ćetkovića. What matters most never shows on a price list: time, privacy, and leaving without a single unpleasant memory.</span></p>
+        <p style="font-family:var(--font-heading);font-size:26px;font-style:italic;margin:26px 0 0;color:var(--loli-sage)">Lola</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="zakazi" style="padding:96px 40px;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:72px;align-items:start">
+    <div>
+      <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--loli-sage);margin-bottom:16px"><span class="sr">Zakazivanje</span><span class="en">Booking</span></div>
+      <h2 style="font-size:42px;font-weight:400;margin:0 0 20px;max-width:20ch"><span class="sr">Izaberi termin, ostalo je na nama</span><span class="en">Pick a time, we’ll take it from there</span></h2>
+      <p style="text-align:justify;hyphens:auto;font-size:16px;line-height:1.75;color:color-mix(in srgb,var(--color-text) 76%,transparent);max-width:42ch"><span class="sr">Potvrđujemo ti termin porukom u toku dana. Ako ti je brže — pozovi ili piši na WhatsApp, uvek odgovorimo.</span><span class="en">We confirm by message the same day. If it’s quicker, call or send a WhatsApp — we always reply.</span></p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 32px">
+        <a href="tel:+381634112080" class="btn btn-secondary" style="font-size:16px;padding:11px 18px;white-space:nowrap">+381 63 411 208</a>
+        <a href="https://wa.me/381634112080" class="btn btn-secondary" style="font-size:16px;padding:11px 18px">WhatsApp</a>
+      </div>
+      <hr class="hr">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;font-size:16px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">
+        <div><div style="font-family:var(--font-body);color:var(--loli-sage);margin-bottom:4px"><span class="sr">Adresa</span><span class="en">Address</span></div>Pere Ćetkovića 11c<br>Beograd</div>
+        <div><div style="font-family:var(--font-body);color:var(--loli-sage);margin-bottom:4px"><span class="sr">Radno vreme</span><span class="en">Hours</span></div><span style="font-feature-settings:'tnum'"><span class="sr">Pon–Pet 09–20h<br>Sub 09–16h</span><span class="en">Mon–Fri 9–20<br>Sat 9–16</span></span></div>
+      </div>
+    </div>
+    <div class="card elev-sm" style="padding:36px;background:var(--color-bg)">
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:40px 8px;text-align:center">
+          <img src="assets/mark-green.png" alt="" style="height:44px;width:auto;margin:0 auto 20px">
+          <h3 style="font-size:26px;font-weight:400;margin:0 0 10px"><span class="sr">Hvala, upisano je!</span><span class="en">Thank you — you’re on the list!</span></h3>
+          <p style="color:color-mix(in srgb,var(--color-text) 70%,transparent);margin:0 0 22px"><span class="sr">Potvrdu termina dobijaš porukom u toku dana.</span><span class="en">You’ll get a confirmation message today.</span></p>
+          <button class="btn btn-ghost" onClick="{{ reset }}"><span class="sr">Zakaži još jedan termin</span><span class="en">Book another visit</span></button>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <div>
+          <h3 style="font-size:26px;font-weight:400;margin:0 0 24px"><span class="sr">Zahtev za termin</span><span class="en">Appointment request</span></h3>
+          <div class="field" style="margin-bottom:18px">
+            <label><span class="sr">Usluga</span><span class="en">Service</span></label>
+            <select class="input" value="{{ service }}" onChange="{{ setService }}">
+              <option>Masaža — relaks (60 min)</option>
+              <option>Masaža — duboka tkiva (60 min)</option>
+              <option>Masaža — anticelulit (45 min)</option>
+              <option>Depilacija — noge i bikini</option>
+              <option>Depilacija — intimna zona</option>
+              <option>Manikir — gel</option>
+              <option>Sprej ten</option>
+              <option>Frizura po pozivu</option>
+            </select>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px">
+            <div class="field"><label><span class="sr">Datum</span><span class="en">Date</span></label><input class="input" type="date" value="{{ date }}" onChange="{{ setDate }}"></div>
+            <div class="field"><label><span class="sr">Telefon</span><span class="en">Phone</span></label><input class="input" type="tel" placeholder="06x xxx xxxx" value="{{ phone }}" onChange="{{ setPhone }}"></div>
+          </div>
+          <div class="field" style="margin-bottom:18px">
+            <label><span class="sr">Vreme</span><span class="en">Time</span></label>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+              <sc-for list="{{ times }}" as="t" hint-placeholder-count="8">
+                <button class="btn btn-secondary" style="position:relative;font-feature-settings:'tnum';font-size:10px;padding:8px 12px" style-hover="border-color:var(--color-accent)" data-t="{{ t.value }}" onClick="{{ pickTime }}" aria-pressed="{{ t.on }}">{{ t.value }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <div class="field" style="margin-bottom:18px"><label><span class="sr">Ime i prezime</span><span class="en">Full name</span></label><input class="input" value="{{ name }}" onChange="{{ setName }}"></div>
+          <div class="field" style="margin-bottom:24px"><label><span class="sr">Poruka (alergije, želje)</span><span class="en">Notes (allergies, requests)</span></label><textarea class="input" value="{{ note }}" onChange="{{ setNote }}"></textarea></div>
+          <button class="btn btn-primary btn-block" style="font-size:16px;padding:13px" onClick="{{ submit }}"><span class="sr">Pošalji zahtev</span><span class="en">Send request</span></button>
+          <p style="font-size:10px;text-align:center;margin:14px 0 0;color:color-mix(in srgb,var(--color-text) 55%,transparent)"><span class="sr">Termin nije potvrđen dok ne dobiješ poruku od nas.</span><span class="en">Your slot isn’t confirmed until we message you.</span></p>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="padding:0 40px 96px;max-width:900px;margin:0 auto">
+    <hr class="hr" style="margin:0 0 44px">
+    <h2 style="font-size:42px;font-weight:400;margin:0 0 32px"><span class="sr">Česta pitanja</span><span class="en">Frequently asked</span></h2>
+    <details style="border-top:1px solid var(--color-divider);padding:20px 0">
+      <summary style="list-style:none;cursor:pointer;font-family:var(--font-body);font-size:16px;display:flex;justify-content:space-between;gap:20px"><span class="sr">Koliko dlačica treba da naraste pre depilacije?</span><span class="en">How long should the hair be before waxing?</span><span style="color:var(--loli-rose)">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.7;max-width:64ch;color:color-mix(in srgb,var(--color-text) 76%,transparent)"><span class="sr">Oko pet milimetara — obično dve do tri nedelje posle brijanja. Ako je kraće, vosak ne uhvati dobro i moramo ponavljati preko iste kože.</span><span class="en">About five millimetres — usually two to three weeks after shaving.</span></p>
+    </details>
+    <details style="border-top:1px solid var(--color-divider);padding:20px 0">
+      <summary style="list-style:none;cursor:pointer;font-family:var(--font-body);font-size:16px;display:flex;justify-content:space-between;gap:20px"><span class="sr">Da li mogu na masažu u trudnoći?</span><span class="en">Can I have a massage while pregnant?</span><span style="color:var(--loli-rose)">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.7;max-width:64ch;color:color-mix(in srgb,var(--color-text) 76%,transparent)"><span class="sr">Možeš, posle prvog trimestra i uz prilagođen položaj i pritisak. Reci nam pri zakazivanju da ostavimo više vremena.</span><span class="en">Yes, after the first trimester, with adapted position and pressure. Tell us when booking.</span></p>
+    </details>
+    <details style="border-top:1px solid var(--color-divider);padding:20px 0">
+      <summary style="list-style:none;cursor:pointer;font-family:var(--font-body);font-size:16px;display:flex;justify-content:space-between;gap:20px"><span class="sr">Kako da pripremim kožu za sprej ten?</span><span class="en">How do I prepare for a spray tan?</span><span style="color:var(--loli-rose)">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.7;max-width:64ch;color:color-mix(in srgb,var(--color-text) 76%,transparent)"><span class="sr">Piling dan pre, bez kreme i dezodoransa na dan tretmana, i ponesi široku, tamnu odeću. Prvo kupanje posle osam sati.</span><span class="en">Exfoliate the day before, skip cream and deodorant, bring loose dark clothes. First shower after eight hours.</span></p>
+    </details>
+    <details style="border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);padding:20px 0">
+      <summary style="list-style:none;cursor:pointer;font-family:var(--font-body);font-size:16px;display:flex;justify-content:space-between;gap:20px"><span class="sr">Šta ako otkažem ili zakasnim?</span><span class="en">What if I cancel or run late?</span><span style="color:var(--loli-rose)">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.7;max-width:64ch;color:color-mix(in srgb,var(--color-text) 76%,transparent)"><span class="sr">Otkaži najmanje četiri sata pre — termin onda može da dobije neko drugi. Kod kašnjenja radimo koliko vremena ostane, da sledeća klijentkinja ne čeka.</span><span class="en">Cancel at least four hours ahead. If you’re late we work with the time left, so the next guest isn’t kept waiting.</span></p>
+    </details>
+  </section>
+
+  <footer id="kontakt" style="background:var(--loli-green-deep);padding:72px 40px 36px">
+    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr));gap:48px;align-items:start">
+      <div>
+        <img src="assets/logo-stacked.png" alt="Loli spot" style="height:96px;width:auto;margin-bottom:20px">
+        <p style="font-size:16px;line-height:1.7;color:color-mix(in srgb,#ffffff 68%,transparent);max-width:32ch;margin:0"><span class="sr">Salon lepote za masažu, depilaciju i negu — u Pere Ćetkovića 11c, Beograd.</span><span class="en">A beauty salon for massage, waxing and care — Pere Ćetkovića 11c, Belgrade.</span></p>
+      </div>
+      <div style="font-size:16px;line-height:2;color:color-mix(in srgb,#ffffff 72%,transparent)">
+        <div style="font-family:var(--font-body);color:#ffffff;font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px"><span class="sr">Usluge</span><span class="en">Services</span></div>
+        <a href="#usluge" style="color:inherit;display:block"><span class="sr">Masaža</span><span class="en">Massage</span></a>
+        <a href="#usluge" style="color:inherit;display:block"><span class="sr">Depilacija</span><span class="en">Waxing</span></a>
+        <a href="#usluge" style="color:inherit;display:block"><span class="sr">Manikir</span><span class="en">Manicure</span></a>
+        <a href="Cenovnik.dc.html" style="color:inherit;display:block"><span class="sr">Cenovnik</span><span class="en">Price list</span></a>
+      </div>
+      <div style="font-size:16px;line-height:2;color:color-mix(in srgb,#ffffff 72%,transparent)">
+        <div style="font-family:var(--font-body);color:#ffffff;font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px"><span class="sr">Kontakt</span><span class="en">Contact</span></div>
+        <a href="tel:+381634112080" style="color:inherit;display:block;font-feature-settings:'tnum'">+381 63 411 208</a>
+        <a href="mailto:zdravo@lolispot.rs" style="color:inherit;display:block">zdravo@lolispot.rs</a>
+        <a href="https://instagram.com" style="color:inherit;display:block">@loli.spot</a>
+      </div>
+      <div style="font-size:16px;line-height:2;color:color-mix(in srgb,#ffffff 72%,transparent);font-feature-settings:'tnum'">
+        <div style="font-family:var(--font-body);color:#ffffff;font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px"><span class="sr">Radno vreme</span><span class="en">Hours</span></div>
+        <div><span class="sr">Pon–Pet</span><span class="en">Mon–Fri</span> 09–20h</div>
+        <div><span class="sr">Subota</span><span class="en">Saturday</span> 09–16h</div>
+        <div><span class="sr">Nedelja — zatvoreno</span><span class="en">Sunday — closed</span></div>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:44px auto 0;padding-top:20px;border-top:1px solid color-mix(in srgb,#ffffff 20%,transparent);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:10px;color:color-mix(in srgb,#ffffff 55%,transparent)">
+      <span>© 2026 Loli spot</span>
+      <span><span class="sr">Zakazivanje isključivo uz potvrdu porukom</span><span class="en">Appointments confirmed by message</span></span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultLang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;sr&quot;,&quot;en&quot;],&quot;default&quot;:&quot;sr&quot;,&quot;tsType&quot;:&quot;'sr'|'en'&quot;,&quot;section&quot;:&quot;Izgled&quot;},&quot;showGallery&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcije&quot;}}">
+class Component extends DCLogic {
+  state = {
+    lang: null, submitted: false, time: "11:00",
+    service: "Masaža — relaks (60 min)", date: "", phone: "", name: "", note: ""
+  };
+  get lang() { return this.state.lang ?? (this.props.defaultLang ?? "sr"); }
+  renderVals() {
+    const lang = this.lang;
+    const set = k => e => this.setState({ [k]: e.target.value });
+    return {
+      lang,
+      langLabel: lang === "sr" ? "EN" : "SR",
+      galleryOn: (this.props.showGallery ?? true) ? "true" : "false",
+      toggleLang: () => this.setState({ lang: lang === "sr" ? "en" : "sr" }),
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      submit: () => this.setState({ submitted: true }),
+      reset: () => this.setState({ submitted: false }),
+      service: this.state.service, date: this.state.date, phone: this.state.phone,
+      name: this.state.name, note: this.state.note,
+      setService: set("service"), setDate: set("date"), setPhone: set("phone"),
+      setName: set("name"), setNote: set("note"),
+      pickTime: e => this.setState({ time: e.currentTarget.dataset.t }),
+      times: ["09:00","10:00","11:00","12:00","14:00","15:00","17:00","18:00","19:00"].map(v => ({
+        value: v,
+        on: this.state.time === v ? "true" : "false"
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
